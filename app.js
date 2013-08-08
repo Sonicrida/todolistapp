@@ -35,7 +35,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index(Todo));
 app.get('/users', user.list);
-app.get('/todos.json', routes.update(Todo));
+app.get('/todos.json', routes.get(Todo));
 
 app.put('/todo/:id.json', routes.update(Todo));
 
